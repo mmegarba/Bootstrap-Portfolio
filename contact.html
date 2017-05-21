@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style = "margin:0; height:100%;">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -7,34 +7,86 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-       <style>
+  
+  <style>
     
     .divider{
       border-style:solid; border-width:1px;
     }
     .header{
       background:white;
+      width:100%;
+      height:60px;
+      background:skyblue;
+    }
+    .footer{
+      background:skyblue;
+      margin-top:20px;
+      height:60px;
+      bottom:0px;
+      text-align:center;
+      position:fixed;
+      width:100%;
+      border-top-style:solid;
+
+    }
+    .aside{
+      padding-bottom:20px;
+      height:175px;
+      margin-bottom:20px;
+    }
+    .section{
+      background:white;
     }
 
-  </style>
-  </head>
-  <body>
-<!-- container -->
-<div class = "container">
 
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+// 20px gutter
+.gutter-20.row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.gutter-20 > [class^="col-"], .gutter-20 > [class^=" col-"] {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+p{
+  padding:5px;
+}
+
+h1{
+  color:black;
+  font-weight:bold;
+    padding:5px;
+
+ }
+  </style>
+
+
+
+
+
+  </head>
+
+
+
+  <body style= "background-image :url(assets/images/honeycomb.png); margin:0; height:100%; ">
+<!-- container for Nav-->
+<div class ="header">
+<div class = "container" style ="background:skyblue;">
+
+  
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded" class="navbar sticky-top navbar-light bg-faded" style ="background:skyblue; font-size:13px">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="#"></a>
+  <a class="navbar-brand" href="#">Michael Megarbane</a>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-     <li class= "nav-item">
+      <li class="nav-item ">
         <a class="nav-link" href="index.html">About Me </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="portfolio.html">Portfolio</a>
+        <a class="nav-link" href="portfolio.html">Portfollio</a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
@@ -43,55 +95,90 @@
   </div>
 </nav>
 </div>
-<!-- container end -->
-<!-- container start -->
+
+</div>
+<!-- Container for Main section -->
 <div class = "container">
-  <div class = "row" style ="margin-top:40px">
-  
-  <div class = "col-md-8" style = "border-style:solid; border-width:2px;float-left; margin-top:20px">
-  <h1 style = "font-size:14pt; text-align:center">About Me</h1>
-  
-  <div class="divider">
-  </div>
 
-  <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAfPAAAAJGI0ODY3M2VmLTJiYjktNGM0Yi05OTVmLWRmYTcxZWQ0NzQ1OA.jpg" alt="me" class="img-responsive" style = "margin-top:10px;ß">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quidem, quae dignissimos unde incidunt distinctio. Earum omnis aspernatur odio, nulla ipsa, optio, consequatur libero minima nobis, debitis ipsum ipsam iste!</p>
-  </div>
+  <div class = "row" style ="margin-top:100px">
 
-  <div class = "col-md-4" style = "border-style:solid; border-width:2px; float-left;margin-top:20px">
-  <h1 style = "font-size:14pt; text-align:center">Contact Me</h1>
-    
+<div class="col-md-8">
+
+<div class = "section">
+<form>
+    <div class="form-group row">
+      <label for="inputText3" class="col-md-8 col-form-label" style = "font-weight:bold;">Full Name</label>
+      <div class="col-md-8">
+        <input type="text" class="form-control" id="inputText3" placeholder="Johnny Appleseeds" style = "width:50%">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-md-8 col-form-label" style = "font-weight:bold;">Email</label>
+      <div class="col-md-8">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="example@gmail.com">
+      </div>
+    </div>
+     <div class="form-group row">
+      <label for="inputMessage3" class="col-md-8 col-form-label" style = "font-weight:bold;">Message</label>
+      <div class="col-md-8">
+        <input type="text" class="form-control" id="inputMessage3" placeholder="">
+      </div>
+    </div>
+
+
+    <input class="btn btn-primary" type="submit" value="Submit">
+
+</form>
+</div>
+</div>
+
+
+<!-- ----------------leave it alone----------- -->
+
+  <div class = "col-md-4" style = "">
+
+  <div class="aside" style = "background:white;">
+    <h1 style = "font-size:14pt; text-align:center">Connect With Me</h1>
 
     <div class="divider">
-  </div>
-
-  <div>
-
+    </div>
     <a href = "https://www.facebook.com/mmegarbane"> 
-      <img src="assets/images/fb icon.png" alt="facebook icon"  id = "imgicon" > 
+      <img src="assets/images/fb icon.png" alt="facebook icon"   style = "width:40px; height:40px;margin-left:15%;margin-top:10%" class= "rounded float-left" class="img-fluid"> 
     </a>
 
     <a href = "https://github.com/mmegarba"> 
-      <img src="assets/images/GitHub icon.png" alt="github icon"  id = "imgicon">
+      <img src="assets/images/GitHub icon.png" alt="github icon"  style = "width:40px; height:40px;margin-left:15%; margin-top:10%;" class = "rounded float-left">
     </a>
 
     <a href ="https://www.linkedin.com/in/michael-megarbane-8433b961/">
-      <img src="assets/images/linkedin icon.png" alt="linkedin icon"  id = "imgicon">
+      <img src="assets/images/linkedin icon.png" alt="linkedin icon" style = "width:40px; height:40px; margin-left:15%;margin-top:10%" class = "rounded float-left">
     </a>
   </div>
-
-
   </div>
+  </div>
+</div>
   
-  </div>
 
- </div>
- <!-- container end -->
+<!-- container -->
 
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
   </body>
+
+    <div class = "footer">
+  <div class="container" style = "padding-right:15px; padding-left:15px;">
+    <div class="row">
+      
+      <div class="col">
+      <p>© Copyright Michael Megarbane</p>
+      </div>
+    </div>
+
+    </div>
+    </div>
 </html>
